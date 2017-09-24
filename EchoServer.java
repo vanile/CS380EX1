@@ -23,7 +23,7 @@ public final class EchoServer {
                     InputStreamReader isr = new InputStreamReader(is, "UTF-8");
                     BufferedReader br = new BufferedReader(isr);
 
-                    out.printf("Hi %s, thanks for connecting!%n", address);
+                    out.println(address + " connected.");
                     String userInput = "";
 
                     while (!userInput.equals(exitVar)) {
